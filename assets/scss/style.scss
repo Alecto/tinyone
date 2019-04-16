@@ -6,10 +6,12 @@
 @import "common";
 
 @import "header/header";
-@import "header/header-logo";
 @import "header/header-menu";
+@import "header/header-logo";
+@import "header/header-navbar";
+@import "header/header-slider";
 
-@import "sections/slider";
 @import "sections/features";
 @import "sections/contacts";
+
 @import "footer";

@@ -3,21 +3,24 @@
 }
 
 html {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
-  font-family: 'PT Sans', sans-serif;
 }
 
 a {
   text-decoration: none;
+
   color: $base-color;
+
   font-size: 1.375rem;
   font-weight: bold;
 }
 
 .container {
+  display: grid;
+
   max-width: $large;
   margin: 0 auto;
   padding: 0 $gap;
-  display: grid;
 }
-
+

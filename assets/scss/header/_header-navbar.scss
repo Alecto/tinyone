@@ -1,0 +1,32 @@
+.header-navbar {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  &__list {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    padding: 0 ($gap * 0.85);
+
+    &:last-of-type {
+      margin-right: -$gap;
+      padding-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    padding: ($gap / 2) $gap;
+
+    letter-spacing: 0.03em;
+  }
+}
