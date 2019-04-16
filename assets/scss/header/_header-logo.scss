@@ -1,0 +1,17 @@
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin-top: -5px;
+
+  &__image {
+    display: block;
+  }
+
+  &__title {
+    display: block;
+    margin-left: $gap / 2;
+    font-weight: bold;
+    font-size: 1.875rem;
+  }
+}

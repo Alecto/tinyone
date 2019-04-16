@@ -1,0 +1,28 @@
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    padding: 0 ($gap * 0.65);
+
+    &:last-of-type {
+      padding-right: 0;
+      margin-right: -$gap;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: ($gap / 2) $gap;
+    letter-spacing: 0.03em;
+  }
+}

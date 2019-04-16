@@ -1,0 +1,12 @@
+.header {
+  min-height: 140px;
+
+  background-color: $highlighted-color;
+
+  &-container {
+    min-height: 140px;
+    padding-top: 30px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}

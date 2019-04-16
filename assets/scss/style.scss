@@ -1,7 +1,14 @@
 @import "../../libs/normalize-scss/sass/normalize/import-now";
 
+@import "skins";
+@import "variables";
+
 @import "common";
-@import "header";
+
+@import "header/header";
+@import "header/header-logo";
+@import "header/header-menu";
+
 @import "sections/slider";
 @import "sections/features";
 @import "sections/contacts";
