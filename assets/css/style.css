@@ -3570,14 +3570,6 @@ a {
   font-weight: bold;
 }
 
-.container {
-  display: grid;
-
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .header {
   background-color: #ffd700;
 }
@@ -3585,7 +3577,12 @@ a {
 .header-menu {
   position: relative;
 
+  display: grid;
+
+  max-width: 960px;
   min-height: 140px;
+  margin: 0 auto;
+  padding: 0 20px;
   padding-top: 30px;
 
   grid-template-columns: auto 1fr;
@@ -3661,6 +3658,12 @@ a {
 }
 
 .header-slider {
+  display: grid;
+
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+
   grid-template-rows: minmax(500px, -webkit-max-content) 100px;
   grid-template-rows: minmax(500px, max-content) 100px;
 }
