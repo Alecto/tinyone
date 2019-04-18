@@ -4,20 +4,26 @@
 
   &__title {
     margin: ($gap * 1.6) ($gap * 3) ($gap * 0.5);
+
     text-align: center;
+
     font-size: 2rem;
   }
 
   &__description {
-    font-size: 1.25rem;
     margin: ($gap * 0.2) ($gap * 3) ($gap * 4.3);
-    color: $gray-dark;
+
     text-align: center;
+
+    color: $gray-dark;
+
+    font-size: 1.25rem;
     line-height: 1.2;
   }
 
   &__content {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, minmax(168px, max-content));
     grid-gap: $gap * 1.5;
@@ -26,6 +32,7 @@
 
 .feature {
   display: grid;
+
   grid-template-columns: ($gap * 2.5) 1fr;
   grid-template-areas: "fic ftl" "fic fds";
   grid-template-rows: minmax($gap * 1.5, max-content) auto;
@@ -33,21 +40,27 @@
   grid-row-gap: $gap * 0.4;
 
   &__title {
-    grid-area: ftl;
-    font-size: 1.375rem;
     margin: 0;
+
+    font-size: 1.375rem;
+
+    grid-area: ftl;
   }
 
   &__description {
-    grid-area: fds;
     margin: 0;
-    line-height: 1.3;
+
     color: $gray-light;
+
+    line-height: 1.3;
+
+    grid-area: fds;
   }
 
   &__icon {
-    grid-area: fic;
     text-align: center;
+
+    grid-area: fic;
 
     i {
       font-size: 3.2rem;
