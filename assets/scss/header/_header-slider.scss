@@ -1,5 +1,4 @@
 .header-slider {
-  @include container;
   grid-template-rows: minmax(500px, max-content) 100px;
 }
 
