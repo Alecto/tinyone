@@ -3779,12 +3779,12 @@ a {
 }
 
 .features {
-  padding-top: 80px;
-  padding-bottom: 110px;
+  padding-top: 113px;
+  padding-bottom: 140px;
 }
 
 .features__title {
-  margin: 32px 60px 10px;
+  margin: 0 60px 10px;
 
   text-align: center;
 
@@ -3806,9 +3806,10 @@ a {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, minmax(168px, -webkit-max-content));
-  grid-template-rows: repeat(2, minmax(168px, max-content));
-  grid-gap: 30px;
+  grid-template-rows: repeat(2, minmax(138px, -webkit-max-content));
+  grid-template-rows: repeat(2, minmax(138px, max-content));
+  grid-column-gap: 40px;
+  grid-row-gap: 60px;
 }
 
 .feature {
@@ -3847,7 +3848,7 @@ a {
 }
 
 .feature__icon i {
-  font-size: 3.2rem;
+  font-size: 3.1rem;
 }
 
 .contacts {
