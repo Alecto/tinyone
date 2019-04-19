@@ -17,7 +17,7 @@ a {
 .container {
   display: grid;
 
-  max-width: $large;
+  max-width: $max-width;
   margin: 0 auto;
   padding-right: $gap;
   padding-left: $gap;
