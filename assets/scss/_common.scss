@@ -8,10 +8,10 @@ html {
 }
 
 a {
+  transition: color 0.5s;
   text-decoration: none;
 
   color: $base-color;
-  transition: color 0.5s;
 }
 
 .container {
