@@ -1,9 +1,16 @@
 .header-menu {
   position: relative;
 
-  min-height: 140px;
   padding-top: $gap * 1.5;
 
   grid-template-columns: auto 1fr;
   align-items: center;
+
+  @media (min-width: $small + 1) {
+    min-height: 140px;
+  }
+
+  @media (max-width: $small) {
+    min-height: 100px;
+  }
 }

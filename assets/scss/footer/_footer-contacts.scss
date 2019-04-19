@@ -58,18 +58,24 @@
   &__form {
     display: grid;
 
-    grid-template-columns: 1fr 127px;
     grid-gap: $gap;
 
     @media (min-width: $medium + 1) {
+      grid-template-columns: 1fr 127px;
       margin: 0 ($gap * 5) ($gap * 3.5);
     }
 
     @media (max-width: $medium) and (min-width: $small + 1) {
+      grid-template-columns: 1fr 127px;
       margin: 0 ($gap * 4) ($gap * 2);
     }
 
-    @media (max-width: $small) {
+    @media (max-width: $small) and (min-width: $xsmall + 1) {
+      grid-template-columns: 1fr 127px;
+      margin: 0 0 $gap;
+    }
+
+    @media (max-width: $xsmall) {
       margin: 0 0 $gap;
     }
 

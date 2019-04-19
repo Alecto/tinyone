@@ -1,5 +1,11 @@
 .header-slider {
-  grid-template-rows: minmax(500px, max-content) 100px;
+  @media (min-width: $small + 1) {
+    grid-template-rows: minmax(500px, max-content) 100px;
+  }
+
+  @media (max-width: $small) {
+    grid-template-rows: minmax(300px, max-content) 80px;
+  }
 }
 
 .slide {
@@ -33,7 +39,7 @@
   @media (max-width: $xsmall) {
     grid-column-gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
+    grid-template-areas: "ttl ttl" "stl stl" "dsc img" "brd brd";
   }
 
   &__title {
@@ -75,7 +81,11 @@
 
     grid-area: brd;
 
-    li {
+    @media (max-width: $xsmall) {
+      justify-content: center;
+    }
+
+    li:not(:last-of-type) {
       margin-right: $gap * 1.75;
     }
 

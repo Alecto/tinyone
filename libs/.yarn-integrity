@@ -7,10 +7,12 @@
   "linkedModules": [],
   "topLevelPatterns": [
     "font-awesome@^4.7.0",
+    "jquery@^3.4.0",
     "normalize-scss@^7.0.1"
   ],
   "lockfileEntries": {
     "font-awesome@^4.7.0": "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133",
+    "jquery@^3.4.0": "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf",
     "normalize-scss@^7.0.1": "https://registry.yarnpkg.com/normalize-scss/-/normalize-scss-7.0.1.tgz#74485e82bb5d0526371136422a09fdb868ffc1a4"
   },
   "files": [],
