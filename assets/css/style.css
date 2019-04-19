@@ -3885,19 +3885,10 @@ a {
 }
 
 .footer {
-  padding-top: 90px;
-  padding-bottom: 140px;
-
   background-color: #010101;
 }
 
-.footer-contacts {
-  margin-bottom: 126px;
-}
-
 .footer-contacts__title {
-  margin: 0 80px 10px;
-
   text-align: center;
 
   color: #ffd700;
@@ -3906,8 +3897,6 @@ a {
 }
 
 .footer-contacts__description {
-  margin: 4px 80px 42px;
-
   text-align: center;
 
   color: #898989;
@@ -3917,8 +3906,6 @@ a {
 
 .footer-contacts__form {
   display: grid;
-
-  margin: 0 100px 70px;
 
   grid-template-columns: 1fr 127px;
   grid-gap: 20px;
@@ -4034,6 +4021,9 @@ a {
 }
 
 @media (max-width: 768px) and (min-width: 577px) {
+  .footer-contacts {
+    margin-bottom: 60px;
+  }
   .footer-block {
     grid-template-columns: 300px repeat(2, 1fr);
   }
@@ -4046,22 +4036,72 @@ a {
 }
 
 @media (max-width: 992px) and (min-width: 769px) {
+  .footer-contacts {
+    margin-bottom: 80px;
+  }
+  .footer-contacts__title {
+    margin: 0 60px 10px;
+  }
+  .footer-contacts__description {
+    margin: 4px 60px 42px;
+  }
+  .footer-contacts__form {
+    margin: 0 80px 40px;
+  }
   .footer-block {
     grid-template-columns: 350px repeat(2, 1fr);
   }
 }
 
 @media (min-width: 993px) {
+  .footer {
+    padding-top: 90px;
+    padding-bottom: 140px;
+  }
+  .footer-contacts {
+    margin-bottom: 126px;
+  }
+  .footer-contacts__title {
+    margin: 0 80px 10px;
+  }
+  .footer-contacts__description {
+    margin: 4px 80px 42px;
+  }
+  .footer-contacts__form {
+    margin: 0 100px 70px;
+  }
   .footer-block {
     grid-template-columns: 300px repeat(4, 1fr);
   }
 }
 
+@media (max-width: 992px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+
 @media (max-width: 576px) {
+  .footer-contacts {
+    margin-bottom: 40px;
+  }
   .footer-block {
     grid-template-columns: repeat(2, 1fr);
   }
   .footer-block__first {
     grid-column: 1 / span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-contacts__title {
+    margin: 0 0 10px;
+  }
+  .footer-contacts__description {
+    margin: 0 0 30px;
+  }
+  .footer-contacts__form {
+    margin: 0 0 20px;
   }
 }

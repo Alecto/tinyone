@@ -1,6 +1,13 @@
 .footer {
-  padding-top: $gap * 4.5;
-  padding-bottom: $gap * 7;
-
   background-color: $base-color;
+
+  @media (min-width: $medium + 1) {
+    padding-top: $gap * 4.5;
+    padding-bottom: $gap * 7;
+  }
+
+  @media (max-width: $medium) {
+    padding-top: $gap * 3;
+    padding-bottom: $gap * 4;
+  }
 }

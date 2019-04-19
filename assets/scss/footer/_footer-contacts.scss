@@ -1,33 +1,77 @@
 .footer-contacts {
-  margin-bottom: $gap * 6.3;
+  @media (min-width: $medium + 1) {
+    margin-bottom: $gap * 6.3;
+  }
+
+  @media (max-width: $medium) and (min-width: $small + 1) {
+    margin-bottom: $gap * 4;
+  }
+
+  @media (max-width: $small) and (min-width: $xsmall + 1) {
+    margin-bottom: $gap * 3;
+  }
+
+  @media (max-width: $xsmall) {
+    margin-bottom: $gap * 2;
+  }
 
   &__title {
-    margin: 0 ($gap * 4) ($gap * 0.5);
-
     text-align: center;
 
     color: $highlighted-color;
 
     font-size: 2rem;
+
+    @media (min-width: $medium + 1) {
+      margin: 0 ($gap * 4) ($gap * 0.5);
+    }
+
+    @media (max-width: $medium) and (min-width: $small + 1) {
+      margin: 0 ($gap * 3) ($gap * 0.5);
+    }
+
+    @media (max-width: $small) {
+      margin: 0 0 ($gap * 0.5);
+    }
   }
 
   &__description {
-    margin: ($gap * 0.2) ($gap * 4) ($gap * 2.1);
-
     text-align: center;
 
     color: $gray-light;
 
     font-size: 1.25rem;
+
+    @media (min-width: $medium + 1) {
+      margin: ($gap * 0.2) ($gap * 4) ($gap * 2.1);
+    }
+
+    @media (max-width: $medium) and (min-width: $small + 1) {
+      margin: ($gap * 0.2) ($gap * 3) ($gap * 2.1);
+    }
+
+    @media (max-width: $small) {
+      margin: 0 0 ($gap * 1.5);
+    }
   }
 
   &__form {
     display: grid;
 
-    margin: 0 ($gap * 5) ($gap * 3.5);
-
     grid-template-columns: 1fr 127px;
     grid-gap: $gap;
+
+    @media (min-width: $medium + 1) {
+      margin: 0 ($gap * 5) ($gap * 3.5);
+    }
+
+    @media (max-width: $medium) and (min-width: $small + 1) {
+      margin: 0 ($gap * 4) ($gap * 2);
+    }
+
+    @media (max-width: $small) {
+      margin: 0 0 $gap;
+    }
 
     input {
       height: 50px;
