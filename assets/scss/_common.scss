@@ -11,9 +11,7 @@ a {
   text-decoration: none;
 
   color: $base-color;
-
-  font-size: 1.375rem;
-  font-weight: bold;
+  transition: color 0.5s;
 }
 
 .container {
