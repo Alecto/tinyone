@@ -52,7 +52,6 @@
   }
 
   @media (max-width: $small) {
-    padding-top: $gap * 2;
     position: absolute;
     top: 0;
     right: -273px;
@@ -61,12 +60,9 @@
 
     width: 273px;
     height: 100vh;
+    padding-top: $gap * 2;
 
     background-color: $highlighted-color;
-  }
-
-  &.active {
-    //display: block;
   }
 }
 
@@ -149,4 +145,4 @@
       }
     }
   }
-}
+}
