@@ -24,21 +24,39 @@
   &__content {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, minmax(138px, max-content));
     grid-column-gap: $gap * 2;
     grid-row-gap: $gap * 3;
+
+    @media (min-width: $medium + 1) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, minmax(138px, max-content));
+    }
+
+    @media (max-width: $medium) and (min-width: $xsmall + 1) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $xsmall) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
 .feature {
   display: grid;
 
-  grid-template-columns: ($gap * 2.5) 1fr;
   grid-template-areas: "fic ftl" "fic fds";
   grid-template-rows: minmax($gap * 1.5, max-content) auto;
   grid-column-gap: $gap;
   grid-row-gap: $gap * 0.4;
+
+  @media (min-width: $xsmall + 1) {
+    grid-template-columns: ($gap * 2.5) 1fr;
+  }
+
+  @media (max-width: $xsmall) {
+    grid-template-columns: ($gap * 3) 1fr;
+  }
 
   &__title {
     margin: 0;

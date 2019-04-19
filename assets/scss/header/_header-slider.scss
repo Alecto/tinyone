@@ -10,10 +10,31 @@
 
   opacity: 0;
 
-  grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
-  grid-template-rows: minmax(105px, max-content) auto auto 1fr;
-  grid-column-gap: 180px;
   grid-row-gap: $gap;
+
+  @media (min-width: $medium + 1) {
+    grid-column-gap: 180px;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
+  }
+
+  @media (max-width: $medium) and (min-width: $small + 1) {
+    grid-column-gap: 60px;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
+  }
+
+  @media (max-width: $small) and (min-width: $xsmall + 1) {
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
+  }
+
+  @media (max-width: $xsmall) {
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
+  }
 
   &__title {
     margin: 0;
@@ -72,9 +93,18 @@
 
   &__image {
     margin-top: 4px;
-    margin-right: $gap * 1.5;
 
     grid-area: img;
+
+    @media (min-width: $small + 1) {
+      margin-right: $gap * 1.5;
+    }
+
+    @media (max-width: $small) {
+      img {
+        max-width: 100%;
+      }
+    }
   }
 
   &.active {
