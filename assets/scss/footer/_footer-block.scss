@@ -27,4 +27,27 @@
       font-weight: bold;
     }
   }
-}
+
+  > div {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+
+      width: 2px;
+
+      content: "";
+
+      background-color: rgba($light-color, 0.05);
+    }
+
+    &:hover {
+      &::after {
+        background-color: rgba($light-color, 0.1);
+      }
+    }
+  }
+}
