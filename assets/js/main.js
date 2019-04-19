@@ -22,7 +22,6 @@ $(document).ready(function(){
   $window.on('resize', () => {
     if ($window.width() > 768 && isShow) {
       toggleActive();
-      console.log(isShow);
     }
   });
 });

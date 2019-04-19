@@ -26,16 +26,16 @@ body {
     height: 0;
 
     content: "";
-    transition: opacity 0.25s;
+    transition: opacity 1s;
 
     opacity: 0;
-    background-color: transparent;
+    background-color: $base-color;
   }
 
   &.active {
     overflow-y: hidden;
 
-    padding-right: 22px;
+    padding-right: 23px;
 
     transition: transform 0.5s;
     transform: translateX(-250px);
@@ -45,8 +45,7 @@ body {
 
       height: 100%;
 
-      opacity: 1;
-      background-color: rgba($base-color, 0.75);
+      opacity: 0.85;
     }
   }
 }
@@ -65,4 +64,4 @@ a {
   margin: 0 auto;
   padding-right: $gap;
   padding-left: $gap;
-}
+}
