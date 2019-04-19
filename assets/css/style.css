@@ -3679,7 +3679,7 @@ a {
        -o-transition: width 0.5s, left 0.5s;
           transition: width 0.5s, left 0.5s;
 
-  border-bottom: 5px solid #010101;
+  border-bottom: 4px solid #010101;
 }
 
 .header-navbar__link:hover::after,
