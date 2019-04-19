@@ -59,6 +59,7 @@ a {
 
 .container {
   display: grid;
+  overflow: hidden;
 
   max-width: $max-width;
   margin: 0 auto;

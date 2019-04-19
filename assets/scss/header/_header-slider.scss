@@ -8,13 +8,22 @@
   }
 }
 
+.slides {
+  position: relative;
+}
+
 .slide {
-  display: none;
-  float: left;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  display: grid;
 
   margin-top: $gap;
 
-  opacity: 0;
+  transition: transform 0.5s;
+  transform: translateX(100vw);
 
   grid-row-gap: $gap;
 
@@ -40,6 +49,20 @@
     grid-column-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "ttl ttl" "stl stl" "dsc img" "brd brd";
+  }
+
+  &.active {
+    position: relative;
+    z-index: 1;
+
+    float: none;
+
+    transform: translateX(0);
+  }
+
+  &.moved {
+    z-index: 1;
+    transform: translateX(-100vw);
   }
 
   &__title {
@@ -116,12 +139,6 @@
       }
     }
   }
-
-  &.active {
-    display: grid;
-
-    opacity: 1;
-  }
 }
 
 .indicators {
@@ -150,4 +167,4 @@
   &.active {
     opacity: 1;
   }
-}
+}
