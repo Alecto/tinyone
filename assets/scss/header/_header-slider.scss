@@ -1,4 +1,6 @@
 .header-slider {
+  overflow: hidden;
+
   @media (min-width: $small + 1) {
     grid-template-rows: minmax(500px, max-content) 100px;
   }
@@ -55,13 +57,12 @@
     position: relative;
     z-index: 1;
 
-    float: none;
-
     transform: translateX(0);
   }
 
   &.moved {
     z-index: 1;
+
     transform: translateX(-100vw);
   }
 

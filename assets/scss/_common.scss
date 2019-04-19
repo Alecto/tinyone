@@ -59,10 +59,9 @@ a {
 
 .container {
   display: grid;
-  overflow: hidden;
 
   max-width: $max-width;
   margin: 0 auto;
   padding-right: $gap;
   padding-left: $gap;
-}
+}
