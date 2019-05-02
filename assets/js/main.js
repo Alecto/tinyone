@@ -1,6 +1,6 @@
 $(document).ready(function(){
   /* menu */
-  let $btnHumburger = $('.header-navbar__hamburger');
+  let $btnHamburger = $('.header-navbar__hamburger');
   let $navbarList = $('.header-navbar__list');
   let $window = $(window);
   let $body = $('body');
@@ -17,14 +17,14 @@ $(document).ready(function(){
   /* slider */
   /* menu */
   let toggleActive = () => {
-    $btnHumburger.toggleClass('active');
+    $btnHamburger.toggleClass('active');
     isShow ? $body.removeAttr('class') : $body.toggleClass('active');
     !isShow && playbackStatus && pauseSlideShow();
     $navbarList.fadeToggle(500);
     isShow = !isShow;
   };
 
-  $btnHumburger.on('click', () => {
+  $btnHamburger.on('click', () => {
     toggleActive();
     return false;
   });
@@ -61,7 +61,7 @@ $(document).ready(function(){
       playbackStatus = !playbackStatus;
       clearInterval(slideInterval);
     }
-  };
+  }
 
   let clickIndicatorBtn = (e) => {
     pauseSlideShow();
