@@ -1,11 +1,10 @@
 .header-slider {
   overflow: hidden;
 
-  @media (min-width: $small + 1) {
+  @include md-min {
     grid-template-rows: minmax(500px, max-content) 100px;
   }
-
-  @media (max-width: $small) {
+  @include md {
     grid-template-rows: minmax(300px, max-content) 80px;
   }
 }
@@ -28,26 +27,23 @@
   transform: translateX(100vw);
 
   grid-row-gap: $gap;
-
-  @media (min-width: $medium + 1) {
+  grid-template-rows: minmax(106px, max-content) auto 1fr auto;
+  @include lg-min {
     grid-column-gap: 180px;
     grid-template-columns: 1fr auto;
     grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
   }
-
-  @media (max-width: $medium) and (min-width: $small + 1) {
+  @include lg-md {
     grid-column-gap: 60px;
     grid-template-columns: 1fr auto;
     grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
   }
-
-  @media (max-width: $small) and (min-width: $xsmall + 1) {
+  @include md-sm {
     grid-column-gap: 40px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
   }
-
-  @media (max-width: $xsmall) {
+  @include sm {
     grid-column-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "ttl ttl" "stl stl" "dsc img" "brd brd";
@@ -85,11 +81,10 @@
 
   &__description {
     margin: 0;
-    margin-top: 2px;
 
-    color: $gray-color;
+    color: $color-gray;
 
-    line-height: 1.325;
+    line-height: 1.25;
 
     grid-area: dsc;
   }
@@ -97,15 +92,13 @@
   &__brands {
     display: flex;
 
-    margin: 0;
-    margin-top: $gap * 0.85;
+    margin: ($gap * 0.85) 0 4px;
     padding: 0;
 
     list-style: none;
 
     grid-area: brd;
-
-    @media (max-width: $xsmall) {
+    @include sm {
       justify-content: center;
     }
 
@@ -120,7 +113,7 @@
     a {
       &:hover,
       &:focus {
-        text-shadow: 0 0 15px $light-color;
+        text-shadow: 0 0 15px $color-light;
       }
     }
   }
@@ -129,12 +122,10 @@
     margin-top: 4px;
 
     grid-area: img;
-
-    @media (min-width: $small + 1) {
+    @include md-min {
       margin-right: $gap * 1.5;
     }
-
-    @media (max-width: $small) {
+    @include md {
       img {
         max-width: 100%;
       }
@@ -163,7 +154,7 @@
 
   opacity: 0.5;
   border-radius: $gap * 0.375;
-  background-color: $light-color;
+  background-color: $color-light;
 
   &.active {
     opacity: 1;

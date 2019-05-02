@@ -1,13 +1,12 @@
 .footer {
-  background-color: $base-color;
+  background-color: $color-main;
 
-  @media (min-width: $medium + 1) {
+  @include lg-min {
     padding-top: $gap * 4.5;
     padding-bottom: $gap * 7;
   }
-
-  @media (max-width: $medium) {
+  @include lg {
     padding-top: $gap * 3;
     padding-bottom: $gap * 4;
   }
-}
+}

@@ -1,19 +1,9 @@
-$large: 1024px;
-$medium: 992px;
-$small: 768px;
-$xsmall: 576px;
+$xl: 1024px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
 
 $max-width: 960px;
 $gap: 20px;
 
-@media (min-width: $medium + 1) {
-}
-
-@media (max-width: $medium) and (min-width: $small + 1) {
-}
-
-@media (max-width: $small) and (min-width: $xsmall + 1) {
-}
-
-@media (max-width: $xsmall) {
-}
+$navbar-mobile-width: 250px;

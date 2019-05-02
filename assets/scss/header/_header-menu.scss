@@ -5,12 +5,10 @@
 
   grid-template-columns: auto 1fr;
   align-items: center;
-
-  @media (min-width: $small + 1) {
+  @include md-min {
     min-height: 140px;
   }
-
-  @media (max-width: $small) {
+  @include md {
     min-height: 100px;
   }
-}
+}

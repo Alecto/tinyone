@@ -14,13 +14,13 @@ body {
 
   transition: transform 0.25s;
 
-  background-color: $light-color;
+  background-color: $color-light;
 
   &::before {
     position: absolute;
     z-index: -10;
     top: 0;
-    right: 23px;
+    right: 0;
     left: 0;
 
     height: 0;
@@ -29,16 +29,14 @@ body {
     transition: opacity 1s;
 
     opacity: 0;
-    background-color: $base-color;
+    background-color: $color-main;
   }
 
   &.active {
     overflow-y: hidden;
 
-    padding-right: 23px;
-
     transition: transform 0.5s;
-    transform: translateX(-250px);
+    transform: translateX(-$navbar-mobile-width);
 
     &::before {
       z-index: 10;
@@ -54,7 +52,7 @@ a {
   transition: color 0.5s;
   text-decoration: none;
 
-  color: $base-color;
+  color: $color-main;
 }
 
 .container {
@@ -64,4 +62,4 @@ a {
   margin: 0 auto;
   padding-right: $gap;
   padding-left: $gap;
-}
+}
