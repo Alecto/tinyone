@@ -58,7 +58,10 @@
   }
 
   &__first {
-    @include lg-sm {
+    @include lg-md {
+      grid-row: 1 / span 2;
+    }
+    @include md-sm {
       grid-row: 1 / span 2;
     }
     @include sm {
@@ -69,4 +72,4 @@
       font-weight: bold;
     }
   }
-}
+}
