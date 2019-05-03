@@ -58,15 +58,8 @@
   }
 }
 
-@mixin lg-sm {
-  @media (max-width: $lg - 1) and (min-width: $sm) {
-    @content
-  }
-}
-
 @mixin md-sm {
   @media (max-width: $md - 1) and (min-width: $sm) {
     @content
   }
 }
-
