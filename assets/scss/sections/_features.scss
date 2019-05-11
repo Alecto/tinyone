@@ -1,51 +1,28 @@
 .features {
-  @media (min-width: $lg + 1) {
+  @include lg-min {
     padding-top: $gap * 5.65;
     padding-bottom: $gap * 7;
   }
-
-  @media (max-width: $lg) {
+  @include lg {
     padding-top: $gap * 3;
     padding-bottom: $gap * 4;
   }
 
   &__title {
-    text-align: center;
-
-    font-size: 2rem;
-
-    @media (min-width: $lg + 1) {
-      margin: 0 ($gap * 4) ($gap * 0.5);
-    }
-
-    @media (max-width: $lg) and (min-width: $md + 1) {
-      margin: 0 ($gap * 3) ($gap * 0.5);
-    }
-
-    @media (max-width: $md) {
-      margin: 0 0 ($gap * 0.5);
-    }
+    @extend %section-title;
   }
 
   &__description {
-    margin: ($gap * 0.2) ($gap * 4) ($gap * 4.3);
-
-    text-align: center;
-
     color: $color-gray-dark;
 
-    font-size: 1.25rem;
-    line-height: 1.2;
-
-    @media (min-width: $lg + 1) {
+    @extend %section-description;
+    @include lg-min {
       margin: ($gap * 0.2) ($gap * 4) ($gap * 4.3);
     }
-
-    @media (max-width: $lg) and (min-width: $md + 1) {
+    @include lg-md {
       margin: ($gap * 0.2) ($gap * 3) ($gap * 3);
     }
-
-    @media (max-width: $md) {
+    @include md {
       margin: ($gap * 0.2) 0 ($gap * 2);
     }
   }
@@ -54,19 +31,16 @@
     display: grid;
 
     grid-column-gap: $gap * 2;
-
-    @media (min-width: $lg + 1) {
+    @include lg-min {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, minmax(138px, max-content));
       grid-row-gap: $gap * 3;
     }
-
-    @media (max-width: $lg) and (min-width: $sm + 1) {
+    @include lg-sm {
       grid-template-columns: repeat(2, 1fr);
       grid-row-gap: $gap * 2.5;
     }
-
-    @media (max-width: $sm) {
+    @include sm {
       grid-template-columns: 1fr;
       grid-row-gap: $gap * 2;
     }
@@ -80,12 +54,10 @@
   grid-template-rows: minmax($gap * 1.5, max-content) auto;
   grid-column-gap: $gap;
   grid-row-gap: $gap * 0.4;
-
-  @media (min-width: $sm + 1) {
+  @include sm-min {
     grid-template-columns: ($gap * 2.5) 1fr;
   }
-
-  @media (max-width: $sm) {
+  @include sm {
     grid-template-columns: ($gap * 3) 1fr;
   }
 
@@ -116,4 +88,4 @@
       font-size: 3.1rem;
     }
   }
-}
+}

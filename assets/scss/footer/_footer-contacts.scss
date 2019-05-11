@@ -13,21 +13,9 @@
   }
 
   &__title {
-    text-align: center;
-
     color: $color-accent;
 
-    font-size: 2rem;
-
-    @include lg-min {
-      margin: 0 ($gap * 4) ($gap * 0.5);
-    }
-    @include lg-md {
-      margin: 0 ($gap * 3) ($gap * 0.5);
-    }
-    @include md {
-      margin: 0 0 ($gap * 0.5);
-    }
+    @extend %section-title;
   }
 
   &__description {
@@ -44,7 +32,7 @@
       margin: ($gap * 0.2) ($gap * 3) ($gap * 2.1);
     }
     @include md {
-      margin: 0 0 ($gap * 1.5);
+      margin: ($gap * 0.2) 0 ($gap * 1.5);
     }
   }
 
