@@ -29,7 +29,7 @@ $(document).ready(function(){
     return false;
   });
 
-  $body.on('click', () => isShow && toggleActive());
+  $('html').on('click', 'body.active', () => isShow && toggleActive());
 
   $window.on('resize', () => {
     if ($window.width() > 768 && isShow) {
