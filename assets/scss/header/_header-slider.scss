@@ -92,12 +92,8 @@
   &__brands {
     display: flex;
 
-    margin: ($gap * 0.85) 0 4px;
-    padding: 0;
-
-    list-style: none;
-
     grid-area: brd;
+    @include unlist(($gap * 0.85) 0 4px);
     @include sm {
       justify-content: center;
     }
@@ -136,13 +132,9 @@
 .indicators {
   display: flex;
 
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-
   align-items: center;
   justify-content: center;
+  @include unlist();
 }
 
 .indicator {
