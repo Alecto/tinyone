@@ -3423,12 +3423,12 @@ a {
 
 .header-logo__image {
   display: block;
+
+  margin-right: 10px;
 }
 
 .header-logo__title {
   display: block;
-
-  margin-left: 10px;
 
   font-size: 1.875rem;
 }

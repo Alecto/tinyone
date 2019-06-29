@@ -62,7 +62,7 @@
 
 @mixin bg-image($img, $bgc: gray, $fixed: "none") {
   background-color: $bgc;
-  background-image: url($img);
+  background-image: url($img);
   background-position: top center;
   background-size: cover;
   @if $fixed == "fixed" {

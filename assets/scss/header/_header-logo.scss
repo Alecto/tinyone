@@ -7,13 +7,13 @@
 
   &__image {
     display: block;
+
+    margin-right: $gap / 2;
   }
 
   &__title {
     display: block;
 
-    margin-left: $gap / 2;
-
     font-size: 1.875rem;
   }
-}
+}
