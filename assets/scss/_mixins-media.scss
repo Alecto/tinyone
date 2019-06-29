@@ -1,58 +1,3 @@
-/* ul */
-@mixin ul-min {
-  @media (min-width: $ul) {
-    @content
-  }
-}
-
-@mixin ul {
-  @media (max-width: $ul - 1) {
-    @content
-  }
-}
-
-@mixin ul-xl {
-  @media (max-width: $ul - 1) and (min-width: $xl) {
-    @content
-  }
-}
-
-@mixin ul-lg {
-  @media (max-width: $ul - 1) and (min-width: $lg) {
-    @content
-  }
-}
-
-@mixin ul-md {
-  @media (max-width: $ul - 1) and (min-width: $md) {
-    @content
-  }
-}
-
-@mixin ul-sm {
-  @media (max-width: $ul - 1) and (min-width: $sm) {
-    @content
-  }
-}
-
-@mixin ul-xs {
-  @media (max-width: $ul - 1) and (min-width: $xs) {
-    @content
-  }
-}
-
-@mixin ul-xx {
-  @media (max-width: $ul - 1) and (min-width: $xx) {
-    @content
-  }
-}
-
-@mixin ul-ux {
-  @media (max-width: $ul - 1) and (min-width: $ux) {
-    @content
-  }
-}
-
 /* xl */
 @mixin xl-min {
   @media (min-width: $xl) {
@@ -90,18 +35,6 @@
   }
 }
 
-@mixin xl-xx {
-  @media (max-width: $xl - 1) and (min-width: $xx) {
-    @content
-  }
-}
-
-@mixin xl-ux {
-  @media (max-width: $xl - 1) and (min-width: $ux) {
-    @content
-  }
-}
-
 /* lg */
 @mixin lg-min {
   @media (min-width: $lg) {
@@ -133,18 +66,6 @@
   }
 }
 
-@mixin lg-xx {
-  @media (max-width: $lg - 1) and (min-width: $xx) {
-    @content
-  }
-}
-
-@mixin lg-ux {
-  @media (max-width: $lg - 1) and (min-width: $ux) {
-    @content
-  }
-}
-
 /* md */
 @mixin md-min {
   @media (min-width: $md) {
@@ -170,18 +91,6 @@
   }
 }
 
-@mixin md-xx {
-  @media (max-width: $md - 1) and (min-width: $xx) {
-    @content
-  }
-}
-
-@mixin md-ux {
-  @media (max-width: $md - 1) and (min-width: $ux) {
-    @content
-  }
-}
-
 /* sm */
 @mixin sm-min {
   @media (min-width: $sm) {
@@ -201,18 +110,6 @@
   }
 }
 
-@mixin sm-xx {
-  @media (max-width: $sm - 1) and (min-width: $xx) {
-    @content
-  }
-}
-
-@mixin sm-ux {
-  @media (max-width: $sm - 1) and (min-width: $ux) {
-    @content
-  }
-}
-
 /* xs */
 @mixin xs-min {
   @media (min-width: $xs) {
@@ -222,50 +119,6 @@
 
 @mixin xs {
   @media (max-width: $xs - 1) {
-    @content
-  }
-}
-
-@mixin xs-xx {
-  @media (max-width: $xs - 1) and (min-width: $xx) {
-    @content
-  }
-}
-
-@mixin xs-ux {
-  @media (max-width: $xs - 1) and (min-width: $ux) {
-    @content
-  }
-}
-
-/* xx */
-@mixin xx-min {
-  @media (min-width: $xx) {
-    @content
-  }
-}
-
-@mixin xx {
-  @media (max-width: $xx - 1) {
-    @content
-  }
-}
-
-@mixin xx-ux {
-  @media (max-width: $xx - 1) and (min-width: $ux) {
-    @content
-  }
-}
-
-/* ux */
-@mixin ux-min {
-  @media (min-width: $ux) {
-    @content
-  }
-}
-
-@mixin ux {
-  @media (max-width: $ux - 1) {
     @content
   }
 }
