@@ -19,11 +19,9 @@
   }
 
   &__description {
-    text-align: center;
-
     color: $color-gray-light;
 
-    font-size: 1.25rem;
+    @extend %section-description;
 
     @include lg-min {
       margin: ($gap * 0.2) ($gap * 4) ($gap * 2.1);
@@ -72,10 +70,9 @@
     button {
       cursor: pointer;
 
-      border-radius: 4px;
       background-color: $color-accent;
 
-      font-weight: bold;
+      font-weight: 700;
 
       @extend %form-preset;
     }

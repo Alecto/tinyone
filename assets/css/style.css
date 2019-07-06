@@ -3297,7 +3297,8 @@ template {
   font-size: 2rem;
 }
 
-.features__description {
+.features__description,
+.footer-contacts__description {
   text-align: center;
 
   font-size: 1.25rem;
@@ -3457,7 +3458,7 @@ a {
   letter-spacing: 0.03em;
 
   font-size: 1.375rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .header-navbar__link::after {
@@ -3770,11 +3771,7 @@ a {
 }
 
 .footer-contacts__description {
-  text-align: center;
-
   color: #898989;
-
-  font-size: 1.25rem;
 }
 
 .footer-contacts__form {
@@ -3810,10 +3807,9 @@ a {
 .footer-contacts__form button {
   cursor: pointer;
 
-  border-radius: 4px;
   background-color: #ffd700;
 
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .footer-contacts__socials {
@@ -3888,7 +3884,7 @@ a {
 }
 
 .footer-block__first a {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 @media (min-width: 576px) {
