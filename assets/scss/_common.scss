@@ -17,11 +17,7 @@ body {
   background-color: $color-light;
 
   &::before {
-    position: absolute;
     z-index: -10;
-    top: 0;
-    right: 0;
-    left: 0;
 
     height: 0;
 
@@ -30,13 +26,17 @@ body {
 
     opacity: 0;
     background-color: $color-primary;
+
+    @include abs-position(0, 18px);
   }
 
   &.active {
     overflow-y: hidden;
 
+    padding-right: 18px;
+
     transition: transform 0.5s;
-    transform: translateX(-$navbar-mobile-width);
+    transform: translateX(-$navbar-mobile-width + 18px);
 
     &::before {
       z-index: 10;

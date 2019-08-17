@@ -22,7 +22,6 @@
     color: $color-gray-light;
 
     @extend %section-description;
-
     @include lg-min {
       margin: ($gap * 0.2) ($gap * 4) ($gap * 2.1);
     }
@@ -98,4 +97,4 @@
       }
     }
   }
-}
+}

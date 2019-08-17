@@ -11,9 +11,9 @@ const { sync, syncInit } = require('../../gulp/tasks/sync');
 
 function watchFiles () {
     syncInit();
-    watch($.path.scss.files, series(scssDC));
-    watch([$.path.js.files, '!' + $.path.js.filesMin], series(uglifyes, sync));
-    watch($.path.html.files, sync);
+    watch($.PATH.scss.files, series(scssDC));
+    watch([$.PATH.js.files, '!' + $.PATH.js.filesMin], series(uglifyes, sync));
+    watch($.PATH.html.files, sync);
 }
 
 task('cs', cs);

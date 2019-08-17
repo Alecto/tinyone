@@ -21,7 +21,7 @@
 
   display: grid;
 
-  margin-top: $gap;
+  padding-top: $gap;
 
   transition: transform 0.5s;
   transform: translateX(100vw);
@@ -115,7 +115,7 @@
   }
 
   &__image {
-    margin-top: 4px;
+    padding-top: 4px;
 
     grid-area: img;
     @include md-min {
@@ -151,4 +151,4 @@
   &.active {
     opacity: 1;
   }
-}
+}

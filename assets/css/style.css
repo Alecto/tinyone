@@ -3342,7 +3342,8 @@ body::before {
   position: absolute;
   z-index: -10;
   top: 0;
-  right: 0;
+  right: 18px;
+  bottom: 0;
   left: 0;
 
   height: 0;
@@ -3359,14 +3360,16 @@ body::before {
 body.active {
   overflow-y: hidden;
 
+  padding-right: 18px;
+
   -webkit-transition: -webkit-transform 0.5s;
        -o-transition:         transform 0.5s;
           transition: -webkit-transform 0.5s;
           transition:         transform 0.5s;
           transition:         transform 0.5s, -webkit-transform 0.5s;
-  -webkit-transform: translateX(-250px);
-      -ms-transform: translateX(-250px);
-          transform: translateX(-250px);
+  -webkit-transform: translateX(-214px);
+      -ms-transform: translateX(-214px);
+          transform: translateX(-214px);
 }
 
 body.active::before {
@@ -3588,7 +3591,7 @@ a {
 
   display: grid;
 
-  margin-top: 20px;
+  padding-top: 20px;
 
   -webkit-transition: -webkit-transform 0.5s;
        -o-transition:         transform 0.5s;
@@ -3675,7 +3678,7 @@ a {
 }
 
 .slide__image {
-  margin-top: 4px;
+  padding-top: 4px;
 
   grid-area: img;
 }
@@ -4022,11 +4025,11 @@ a {
   .header-navbar__list {
     position: absolute;
     top: 0;
-    right: -250px;
+    right: -232px;
 
     display: none;
 
-    width: 250px;
+    width: 232px;
     height: 100vh;
     padding-top: 40px;
 
