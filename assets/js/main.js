@@ -1,11 +1,13 @@
-$(document).ready(function(){
+$(document).ready(function () {
   /* menu */
   let $btnHamburger = $('.header-navbar__hamburger');
   let $navbarList = $('.header-navbar__list');
   let $window = $(window);
   let $body = $('body');
   let isShow = false;
+  let isStop = true;
   /* menu */
+
   /* slider */
   let $slides = $('.slide');
   let $indContainer = $('.indicators');
@@ -15,6 +17,7 @@ $(document).ready(function(){
   const carouselInterval = 5000;
   const movedInterval = 500;
   /* slider */
+
   /* menu */
   let toggleActive = () => {
     $btnHamburger.toggleClass('active');
@@ -24,19 +27,32 @@ $(document).ready(function(){
     isShow = !isShow;
   };
 
+  let resetMenu = () => {
+    $btnHamburger.removeClass('active');
+    $body.removeAttr('class');
+    $navbarList.removeAttr('style');
+    isShow = false;
+  };
+
   $btnHamburger.on('click', () => {
     toggleActive();
+
     return false;
   });
 
-  $('html').on('click', 'body.active', () => isShow && toggleActive());
+  $body.on('click', () => isShow && toggleActive());
 
   $window.on('resize', () => {
-    if ($window.width() > 768 && isShow) {
-      toggleActive();
+    if ($window.width() > 768 && isStop) {
+      isStop = false;
+      setTimeout(() => {
+        resetMenu();
+        isStop = true;
+      }, 200);
     }
   });
   /* menu */
+
   /* slider */
   let gotoNSlide = (n) => {
     const i = currentSlide;
@@ -49,7 +65,7 @@ $(document).ready(function(){
 
     setTimeout(() => {
       $($slides[i]).removeClass('moved');
-    }, movedInterval)
+    }, movedInterval);
   };
 
   let gotoNextSlide = () => gotoNSlide(currentSlide + 1);
