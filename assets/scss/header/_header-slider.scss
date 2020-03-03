@@ -30,23 +30,23 @@
   grid-template-rows: minmax(106px, max-content) auto 1fr auto;
   @include lg-min {
     grid-column-gap: 180px;
-    grid-template-columns: 1fr auto;
     grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
+    grid-template-columns: 1fr auto;
   }
   @include lg-md {
     grid-column-gap: 60px;
-    grid-template-columns: 1fr auto;
     grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
+    grid-template-columns: 1fr auto;
   }
   @include md-sm {
     grid-column-gap: 40px;
-    grid-template-columns: 1fr 1fr;
     grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
+    grid-template-columns: 1fr 1fr;
   }
   @include sm {
     grid-column-gap: 20px;
-    grid-template-columns: 1fr 1fr;
     grid-template-areas: "ttl ttl" "stl stl" "dsc img" "brd brd";
+    grid-template-columns: 1fr 1fr;
   }
 
   &.active {
@@ -63,12 +63,13 @@
   }
 
   &__title {
+    align-self: end;
+
     margin: 0;
 
     font-size: 2rem;
 
     grid-area: ttl;
-    align-self: end;
   }
 
   &__subtitle {
@@ -121,19 +122,18 @@
     @include md-min {
       margin-right: $gap * 1.5;
     }
-    @include md {
-      img {
-        max-width: 100%;
-      }
+
+    img {
+      max-width: 100%;
     }
   }
 }
 
 .indicators {
   display: flex;
-
   align-items: center;
   justify-content: center;
+
   @include unlist();
 }
 

@@ -4,7 +4,6 @@
   padding-top: $gap * 1.5;
 
   grid-template-columns: auto 1fr;
-  align-items: center;
   @include md-min {
     min-height: 140px;
   }

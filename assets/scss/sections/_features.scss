@@ -32,17 +32,17 @@
 
     grid-column-gap: $gap * 2;
     @include lg-min {
+      grid-row-gap: $gap * 3;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, minmax(138px, max-content));
-      grid-row-gap: $gap * 3;
     }
     @include lg-sm {
-      grid-template-columns: repeat(2, 1fr);
       grid-row-gap: $gap * 2.5;
+      grid-template-columns: repeat(2, 1fr);
     }
     @include sm {
-      grid-template-columns: 1fr;
       grid-row-gap: $gap * 2;
+      grid-template-columns: 1fr;
     }
   }
 }
@@ -50,10 +50,10 @@
 .feature {
   display: grid;
 
-  grid-template-areas: "fic ftl" "fic fds";
-  grid-template-rows: minmax($gap * 1.5, max-content) auto;
   grid-column-gap: $gap;
   grid-row-gap: $gap * 0.4;
+  grid-template-areas: "fic ftl" "fic fds";
+  grid-template-rows: minmax($gap * 1.5, max-content) auto;
   @include sm-min {
     grid-template-columns: ($gap * 2.5) 1fr;
   }
@@ -88,4 +88,4 @@
       font-size: 3.1rem;
     }
   }
-}
+}
