@@ -1,4 +1,5 @@
 .header-slider {
+  display: grid;
   overflow: hidden;
 
   @include md-min {

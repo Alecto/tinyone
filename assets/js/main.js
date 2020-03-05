@@ -40,7 +40,7 @@ $(document).ready(function () {
     return false;
   });
 
-  $body.on('click', () => isShow && toggleActive());
+  $body.on('click', () => isShow && toggleActive() || true);
 
   $window.on('resize', () => {
     if ($window.width() > 768 && isStop) {

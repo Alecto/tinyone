@@ -1,12 +1,5 @@
 .features {
-  @include lg-min {
-    padding-top: $gap * 5.65;
-    padding-bottom: $gap * 7;
-  }
-  @include lg {
-    padding-top: $gap * 3;
-    padding-bottom: $gap * 4;
-  }
+  @extend %section;
 
   &__title {
     @extend %section-title;
@@ -16,15 +9,6 @@
     color: $color-gray-dark;
 
     @extend %section-description;
-    @include lg-min {
-      margin: ($gap * 0.2) ($gap * 4) ($gap * 4.3);
-    }
-    @include lg-md {
-      margin: ($gap * 0.2) ($gap * 3) ($gap * 3);
-    }
-    @include md {
-      margin: ($gap * 0.2) 0 ($gap * 2);
-    }
   }
 
   &__content {
@@ -34,7 +18,6 @@
     @include lg-min {
       grid-row-gap: $gap * 3;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, minmax(138px, max-content));
     }
     @include lg-sm {
       grid-row-gap: $gap * 2.5;

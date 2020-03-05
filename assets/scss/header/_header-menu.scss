@@ -1,6 +1,8 @@
 .header-menu {
   position: relative;
 
+  display: grid;
+
   padding-top: $gap * 1.5;
 
   grid-template-columns: auto 1fr;
