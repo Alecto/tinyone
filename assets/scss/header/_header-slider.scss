@@ -27,25 +27,25 @@
   transition: transform 0.5s;
   transform: translateX(100vw);
 
-  grid-row-gap: $gap;
+  row-gap: $gap;
   grid-template-rows: minmax(106px, max-content) auto 1fr auto;
   @include lg-min {
-    grid-column-gap: 180px;
+    column-gap: 180px;
     grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
     grid-template-columns: 1fr auto;
   }
   @include lg-md {
-    grid-column-gap: 60px;
+    column-gap: 60px;
     grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
     grid-template-columns: 1fr auto;
   }
   @include md-sm {
-    grid-column-gap: 40px;
+    column-gap: 40px;
     grid-template-areas: "ttl img" "stl img" "dsc img" "brd img";
     grid-template-columns: 1fr 1fr;
   }
   @include sm {
-    grid-column-gap: 20px;
+    column-gap: 20px;
     grid-template-areas: "ttl ttl" "stl stl" "dsc img" "brd brd";
     grid-template-columns: 1fr 1fr;
   }

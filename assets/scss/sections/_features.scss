@@ -14,17 +14,17 @@
   &__content {
     display: grid;
 
-    grid-column-gap: $gap * 2;
+    column-gap: $gap * 2;
     @include lg-min {
-      grid-row-gap: $gap * 3;
+      row-gap: $gap * 3;
       grid-template-columns: repeat(3, 1fr);
     }
     @include lg-sm {
-      grid-row-gap: $gap * 2.5;
+      row-gap: $gap * 2.5;
       grid-template-columns: repeat(2, 1fr);
     }
     @include sm {
-      grid-row-gap: $gap * 2;
+      row-gap: $gap * 2;
       grid-template-columns: 1fr;
     }
   }
@@ -33,8 +33,8 @@
 .feature {
   display: grid;
 
-  grid-column-gap: $gap;
-  grid-row-gap: $gap * 0.4;
+  column-gap: $gap;
+  row-gap: $gap * 0.4;
   grid-template-areas: "fic ftl" "fic fds";
   grid-template-rows: minmax($gap * 1.5, max-content) auto;
   @include sm-min {

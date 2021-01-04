@@ -27,7 +27,7 @@
   &__form {
     display: grid;
 
-    grid-gap: $gap;
+    gap: $gap;
     @include lg-min {
       margin: 0 ($gap * 5) ($gap * 3.5);
 
