@@ -27,7 +27,6 @@
   transition: transform 0.5s;
   transform: translateX(100vw);
 
-  row-gap: $gap;
   grid-template-rows: minmax(106px, max-content) auto 1fr auto;
   @include lg-min {
     column-gap: 180px;
@@ -49,6 +48,7 @@
     grid-template-areas: "ttl ttl" "stl stl" "dsc img" "brd brd";
     grid-template-columns: 1fr 1fr;
   }
+  row-gap: $gap;
 
   &.active {
     position: relative;
